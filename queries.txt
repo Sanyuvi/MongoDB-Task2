@@ -1,0 +1,11 @@
+Que 1: db.Students.find().forEach(function(Stud){print("topic:",Stud.topic,"task:",Stud.task)});
+
+Que 2: db.Students.find({sessionDate:{$gte:"15 oct 2023",$lte:"31 oct 2023"}}).forEach(function(Stud){print(" companyDriverName:",Stud.companyDriverName)});
+
+Que 3:  db.Students.find({placement:"Appeared"}).forEach(function(Stud){print(" companyDriverName:",Stud.companyDriverName,"userName:",Stud.userName)});
+
+Que 4: db.Students.find().forEach(function(Stud){print("userName:",Stud.userName,"codekata:",Stud.codekata)});
+
+Que 5: db.Students.find({menteeCount:{$gte:15}}).forEach(function(Stud){print("mentorName:",Stud.mentorName)});
+
+Que 6: db.Students.find({sessionDate:{$gte:"15 oct 2023",$lte:"31 oct 2023"},attendance:"No",taskSubmitted:"No"}).forEach(function(Stud){print(" userName:",Stud.userName)});
